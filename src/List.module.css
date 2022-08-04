@@ -1,0 +1,6 @@
+.list {
+
+  background: var(--gray-700);
+  border-radius: 8px;
+  overflow: hidden;
+}

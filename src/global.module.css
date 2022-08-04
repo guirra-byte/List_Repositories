@@ -1,0 +1,143 @@
+:root {
+  --white: #fff;
+  --gray-100: #e1e1e6;
+  --gray-300: #c4c4cc;
+  --gray-400: #8d8d99;
+  --gray-600: #323238;
+  --gray-700: #29292e;
+  --gray-800: #202024;
+  --gray-900: #121214;
+
+  --precato-50: #eff6ff;
+  --precato-100: #dbeafe;
+  --precato-300: #93c5fd;
+  --precato-400: #60a5fa;
+  --precato-500: #3b82f6;
+  --precato-600: #2563eb;
+  --precato-700: #1d4ed8;
+  --precato-900: #1e3a8a;
+
+  --green-500: #00875f;
+}
+
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+  background: var(--gray-900);
+  color: var(--gray-300)
+}
+
+body,
+input,
+textarea,
+button {
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+
+}
+
+li {
+
+  background: var(--gray-700);
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 2rem;
+  list-style: none;
+  transition: .4s all;
+  cursor: pointer;
+  width: 30rem;
+  /* overflow: hidden; */
+}
+
+li:hover {
+
+  outline: 2px solid var(--white);
+}
+
+a {
+
+  width: 10rem;
+  background: transparent;
+  background: var(--green-500);
+  color: var(--gray-100);
+  border: none;
+  border-radius: 8px;
+  height: 50px;
+  padding: 0 1.5rem;
+  font-weight: bold;
+  display: block;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: .5rem;
+  transition: .3s all;
+}
+
+a:hover {
+
+  background: transparent;
+  border: 2px solid var(--green-500);
+  color: var(--green-500);
+}
+
+.checkInList {
+
+  margin-left: 10rem;
+  margin-top: 2rem;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.checkInList input {
+
+  width: 20%;
+  padding: 1rem;
+  background: transparent;
+  border-radius: 5px;
+  border: 2px solid var(--green-500);
+  color: var(--gray-100);
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+}
+
+.checkInList button {
+
+  width: 13rem;
+  background: transparent;
+  color: var(--gray-100);
+  background: var(--precato-600);
+  border-radius: 8px;
+  border: none;
+  height: 50px;
+  padding: 0 1.5rem;
+  font-weight: bold;
+  display: block;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: .5rem;
+  transition: .4s all;
+  cursor: pointer;
+}
+
+.checkInList button:hover {
+
+  background: transparent;
+  border: 2px solid var(--precato-700);
+}
